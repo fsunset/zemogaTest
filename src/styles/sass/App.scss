@@ -1,0 +1,17 @@
+/* Global Styling */
+
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../../fonts/Lato-Regular.ttf') format('truetype');
+}
+
+* {
+  font-family: 'Lato';
+}
+
+.simple-page-container {
+	padding-top: 15vh;
+	text-align: center;
+}
