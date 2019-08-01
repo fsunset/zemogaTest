@@ -39,6 +39,7 @@ $persons: (
 
 	.alert {
 		border-radius: 0 !important;
+		border: none !important;
 		padding-bottom: 0 !important;
 
 		h2 {
@@ -70,6 +71,32 @@ $persons: (
 		    @media (min-width: 992px) {
 		    	padding-right: 4rem;
 		    }
+		}
+
+		&.bottom {
+			background: url('../../img/alert-bg.png');
+			background-position: center;
+			padding-top: 3vh;
+			padding-right: 1.25rem;
+		    padding-bottom: 3vh !important;
+		    font-size: 1.7rem;
+
+		    @media (min-width: 992px) {
+		    	p {
+		    		display: inline;
+
+		    		+ button {
+		    			float: right;
+		    			color: $darkGrey;
+		    			border: 2px solid $darkGrey;
+		    			border-radius: 0;
+
+		    			&:hover { color: white !important; }
+		    		}
+		    	}
+		    }
+
+		    .close { display: none; }
 		}
 	}
 }
@@ -196,24 +223,33 @@ main {
 		    	height: 420px;
 		    }
 
-			.card-title,
-			.card-subtitle {
-				font-family: 'Lato';
+		    .card-body {
+		    	position: absolute;
+		    	bottom: 0;
+		    	height: 75%;
+		    	@media (min-width: 992px) {
+		    		height: 60%;
+		    	}
 
-				.span { font-family: 'Lato Light'; }
-			}
+		    	.card-title,
+		    	.card-subtitle {
+		    		font-family: 'Lato';
 
-			.card-title { font-size: 2rem; }
-			.card-subtitle { font-size: .7rem; }
+		    		.span { font-family: 'Lato Light'; }
+		    	}
 
-			.card-img {
-				border-radius: 0;
+		    	.card-title { font-size: 2rem; }
+		    	.card-subtitle { font-size: .7rem; }
 
-				@media (min-width: 992px) {
-				    width: 134%;
-				    margin-left: -25%;
-				}
-			}
+		    	.card-img {
+		    		border-radius: 0;
+
+		    		@media (min-width: 992px) {
+		    		    width: 134%;
+		    		    margin-left: -25%;
+		    		}
+		    	}
+		    }
 
 			// Map for set bg-img in voting boxes
 			@each $name in $persons {

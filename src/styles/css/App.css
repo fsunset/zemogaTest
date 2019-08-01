@@ -17,6 +17,7 @@
     text-decoration: none; }
   * .alert {
     border-radius: 0 !important;
+    border: none !important;
     padding-bottom: 0 !important; }
     * .alert h2 {
       float: left;
@@ -41,6 +42,25 @@
       @media (min-width: 992px) {
         * .alert.alert-dismissible {
           padding-right: 4rem; } }
+    * .alert.bottom {
+      background: url("../../img/alert-bg.png");
+      background-position: center;
+      padding-top: 3vh;
+      padding-right: 1.25rem;
+      padding-bottom: 3vh !important;
+      font-size: 1.7rem; }
+      @media (min-width: 992px) {
+        * .alert.bottom p {
+          display: inline; }
+          * .alert.bottom p + button {
+            float: right;
+            color: #333333;
+            border: 2px solid #333333;
+            border-radius: 0; }
+            * .alert.bottom p + button:hover {
+              color: white !important; } }
+      * .alert.bottom .close {
+        display: none; }
 
 .no-padding-x {
   padding-left: 0 !important;
@@ -140,22 +160,29 @@ main .boxes-container {
     @media (min-width: 992px) {
       main .boxes-container .card {
         height: 420px; } }
-    main .boxes-container .card .card-title,
-    main .boxes-container .card .card-subtitle {
-      font-family: 'Lato'; }
-      main .boxes-container .card .card-title .span,
-      main .boxes-container .card .card-subtitle .span {
-        font-family: 'Lato Light'; }
-    main .boxes-container .card .card-title {
-      font-size: 2rem; }
-    main .boxes-container .card .card-subtitle {
-      font-size: .7rem; }
-    main .boxes-container .card .card-img {
-      border-radius: 0; }
+    main .boxes-container .card .card-body {
+      position: absolute;
+      bottom: 0;
+      height: 75%; }
       @media (min-width: 992px) {
-        main .boxes-container .card .card-img {
-          width: 134%;
-          margin-left: -25%; } }
+        main .boxes-container .card .card-body {
+          height: 60%; } }
+      main .boxes-container .card .card-body .card-title,
+      main .boxes-container .card .card-body .card-subtitle {
+        font-family: 'Lato'; }
+        main .boxes-container .card .card-body .card-title .span,
+        main .boxes-container .card .card-body .card-subtitle .span {
+          font-family: 'Lato Light'; }
+      main .boxes-container .card .card-body .card-title {
+        font-size: 2rem; }
+      main .boxes-container .card .card-body .card-subtitle {
+        font-size: .7rem; }
+      main .boxes-container .card .card-body .card-img {
+        border-radius: 0; }
+        @media (min-width: 992px) {
+          main .boxes-container .card .card-body .card-img {
+            width: 134%;
+            margin-left: -25%; } }
     main .boxes-container .card.bg-img-kanye {
       background: url("../../img/kanye.png");
       background-size: cover;

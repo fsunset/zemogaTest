@@ -75,7 +75,6 @@ const Home = () => {
 							</small>
 						</React.Fragment>
 					]}
-					button={ true }
 				/>
 			</div>
 
@@ -85,6 +84,21 @@ const Home = () => {
 				<div className="row offset-md-1">
 					<VotingBoxes />
 				</div>
+			</div>
+
+			<div className="container">
+				<Alert
+					classCSS="clearfix bottom"
+					variant="secondary"
+					content={[
+						<React.Fragment key="a_2">
+							<p>
+								Is there anyone else you would want us to add?
+							</p>
+						</React.Fragment>
+					]}
+					button={ true }
+				/>
 			</div>
 		</React.Fragment>
 	);

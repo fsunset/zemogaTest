@@ -8,6 +8,7 @@
             "field": "entertainment", 
             "last_active": "1 month ago",
             "img_name": "kanye",
+            "popularity": "high",
             "text": "Vestibulum diam ante, porttitor a odio eget, rhoncus neque. Aenean eu velit."
         },
         {
@@ -16,6 +17,7 @@
             "field": "business", 
             "last_active": "1 month ago",
             "img_name": "mark",
+            "popularity": "low",
             "text": "Vestibulum diam ante, porttitor a odio eget, rhoncus neque. Aenean eu velit."
         },
         {
@@ -24,6 +26,7 @@
             "field": "politics", 
             "last_active": "1 month ago",
             "img_name": "cristina",
+            "popularity": "high",
             "text": "Vestibulum diam ante, porttitor a odio eget, rhoncus neque. Aenean eu velit."
         },
         {
@@ -32,6 +35,7 @@
             "field": "entertainment", 
             "last_active": "1 month ago",
             "img_name": "malala",
+            "popularity": "low",
             "text": "Vestibulum diam ante, porttitor a odio eget, rhoncus neque. Aenean eu velit."
         }
     ]
