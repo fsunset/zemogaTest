@@ -7,8 +7,13 @@
   src: url('../../fonts/Lato-Regular.ttf') format('truetype');
 }
 
+@font-face {
+  font-family: 'Lato Light';
+  src: url('../../fonts/Lato-Light.ttf') format('truetype');
+}
+
 * {
-	font-family: 'Lato';
+	font-family: 'Lato Light';
 
 	a,
 	a:hover {
@@ -26,7 +31,9 @@ $yellow:     #FFB533;
 	padding-right: 0 !important;
 }
 
+.strong-text { font-family: 'Lato'; }
 .white-text { color: white !important; }
+
 .btn-green {
 	background: rgba($green, .9);
 	cursor: pointer;
@@ -50,6 +57,8 @@ header {
 		position: absolute;
 
 		.navbar-toggler { border: none; }
+
+		.navbar-brand { font-family: 'Lato'; }
 	}
 }
 
@@ -68,7 +77,8 @@ main {
 		padding-top: 25vh;
 
 		.box {
-			background-color: rgba(0, 0, 0, .4);
+			background: rgba(60,60,60,.55);
+			overflow: hidden;
 
 			h2,
 			p,
@@ -81,13 +91,15 @@ main {
 				font-size: 4rem;
 
 				small {
-					font-size: 1rem;
+					font-size: 1.1rem;
 					display: block;
 				}
+
+				span { font-weight: 700; }
 			}
 
 			p {
-				font-size: 1.1rem;
+				font-size: 1.3rem;
 				padding-top: 2vh;
 				padding-bottom: 0;
 
@@ -130,7 +142,5 @@ main {
 			cursor: pointer;
 			margin-left: 3vw;
 		}
-
-		.nav-link { font-size: .9rem; }
 	}
 }

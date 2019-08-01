@@ -5,8 +5,12 @@
   font-family: 'Lato';
   src: url("../../fonts/Lato-Regular.ttf") format("truetype"); }
 
+@font-face {
+  font-family: 'Lato Light';
+  src: url("../../fonts/Lato-Light.ttf") format("truetype"); }
+
 * {
-  font-family: 'Lato'; }
+  font-family: 'Lato Light'; }
   * a,
   * a:hover {
     text-decoration: none; }
@@ -15,6 +19,9 @@
 .no-padding-x {
   padding-left: 0 !important;
   padding-right: 0 !important; }
+
+.strong-text {
+  font-family: 'Lato'; }
 
 .white-text {
   color: white !important; }
@@ -42,6 +49,8 @@ header .navbar {
   position: absolute; }
   header .navbar .navbar-toggler {
     border: none; }
+  header .navbar .navbar-brand {
+    font-family: 'Lato'; }
 
 main .simple-page-container {
   padding-top: 35vh;
@@ -55,7 +64,8 @@ main .jumbotron {
   min-height: 750px;
   padding-top: 25vh; }
   main .jumbotron .box {
-    background-color: rgba(0, 0, 0, 0.4); }
+    background: rgba(60, 60, 60, 0.55);
+    overflow: hidden; }
     main .jumbotron .box h2,
     main .jumbotron .box p,
     main .jumbotron .box a {
@@ -64,10 +74,12 @@ main .jumbotron {
       padding-top: 5vh;
       font-size: 4rem; }
       main .jumbotron .box h2 small {
-        font-size: 1rem;
+        font-size: 1.1rem;
         display: block; }
+      main .jumbotron .box h2 span {
+        font-weight: 700; }
     main .jumbotron .box p {
-      font-size: 1.1rem;
+      font-size: 1.3rem;
       padding-top: 2vh;
       padding-bottom: 0; }
       main .jumbotron .box p.wiki-custom-icon > span {
@@ -91,6 +103,4 @@ main .jumbotron {
     .navbar .nav-link,
     .navbar .icon-custom-size {
       cursor: pointer;
-      margin-left: 3vw; }
-    .navbar .nav-link {
-      font-size: .9rem; } }
+      margin-left: 3vw; } }

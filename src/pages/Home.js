@@ -8,7 +8,8 @@ const Home = () => (
 		<div className="container">
 			<div className="col-lg-5 col-md-12 no-padding-x box white-text">
 				<h2>
-					<small>What's your opinion on</small> Pope Francis?
+					<small>What's your opinion on</small>
+					<span>Pope Francis?</span>
 				</h2>
 				<p>
 					He’s talking tough on clergy sexual abuse, but is he just another papal pervert protector? (thumbs down) or a true pedophile punishing pontiff? (thumbs up)
@@ -21,9 +22,7 @@ const Home = () => (
 					</a>
 				</p>
 
-				<p>
-					What's your veredict?
-				</p>
+				<p className="strong-text">What's your veredict? </p>
 
 				<Container>
 					<div className="row">
