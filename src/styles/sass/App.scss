@@ -1,17 +1,136 @@
-/* Global Styling */
+/*
+ *** Global Styling
+*/
 
 @font-face {
   font-family: 'Lato';
-  font-style: normal;
-  font-weight: 400;
   src: url('../../fonts/Lato-Regular.ttf') format('truetype');
 }
 
 * {
-  font-family: 'Lato';
+	font-family: 'Lato';
+
+	a,
+	a:hover {
+		text-decoration: none;
+	}
 }
 
-.simple-page-container {
-	padding-top: 15vh;
-	text-align: center;
+/* Helpers & Vars */
+
+$green:      #2DBBB4;
+$yellow:     #FFB533;
+
+.no-padding-x {
+	padding-left: 0 !important;
+	padding-right: 0 !important;
+}
+
+.white-text { color: white !important; }
+.btn-green {
+	background: rgba($green, .9);
+	cursor: pointer;
+}
+.btn-yellow {
+	background: rgba($yellow, .9);
+	cursor: pointer;
+}
+
+
+
+
+header {
+	.icon-custom-size { font-size: 1.8em; }
+
+	.navbar {
+		background: -moz-linear-gradient(top,  rgba(74,70,70,1) 0%, rgba(255,255,255,0) 100%); /* FF3.6-15 */
+		background: -webkit-linear-gradient(top,  rgba(74,70,70,1) 0%,rgba(255,255,255,0) 100%); /* Chrome10-25,Safari5.1-6 */
+		background: linear-gradient(to bottom,  rgba(74,70,70,1) 0%,rgba(255,255,255,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4a4646', endColorstr='#00ffffff',GradientType=0 ); /* IE6-9 */
+		position: absolute;
+
+		.navbar-toggler { border: none; }
+	}
+}
+
+main {
+	.simple-page-container {
+		padding-top: 35vh;
+		text-align: center;
+	}
+
+	.jumbotron {
+		background: url('../../img/pope.jpg');
+		background-position: top center;
+		background-repeat: no-repeat;
+		background-size: cover;
+		min-height: 750px;
+		padding-top: 25vh;
+
+		.box {
+			background-color: rgba(0, 0, 0, .4);
+
+			h2,
+			p,
+			a {
+				padding: 0 5vh;
+			}
+
+			h2 {
+				padding-top: 5vh;
+				font-size: 4rem;
+
+				small {
+					font-size: 1rem;
+					display: block;
+				}
+			}
+
+			p {
+				font-size: 1.1rem;
+				padding-top: 2vh;
+				padding-bottom: 0;
+
+				&.wiki-custom-icon {
+					> span {
+						font-family: Times New Roman;
+						margin-right: .5vw;
+					}
+
+					a {
+						font-size: .8rem;
+						text-decoration: underline;
+					}
+				}
+			}
+
+			[class*="btn-"] {
+				padding: 2vh;
+				font-size: 2rem;
+			}
+		}
+	}
+}
+
+
+/* 
+ *** Media Queries
+*/
+
+@media (min-width: 992px) {
+	.navbar {
+		padding-top: 8vh !important;
+
+		.navbar-brand {
+		    font-size: 2em;
+		}
+
+		.nav-link, 
+		.icon-custom-size {
+			cursor: pointer;
+			margin-left: 3vw;
+		}
+
+		.nav-link { font-size: .9rem; }
+	}
 }
