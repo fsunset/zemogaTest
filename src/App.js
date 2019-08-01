@@ -6,8 +6,10 @@ import PastTrialsPage from './pages/PastTrials';
 import HowItWorksPage from './pages/HowItWorks';
 import LogInPage from './pages/LogIn';
 import Header from './components/Header';
+import Footer from './components/Footer';
 
 import './styles/css/App.css';
+
 
 function App() {
     return (
@@ -20,6 +22,8 @@ function App() {
 	            <Route path="/how-it-works" component={ HowItWorksPage } />
 	            <Route path="/login" component={ LogInPage } />
             </main>
+
+            <Footer />
         </Router>
     );
 }
