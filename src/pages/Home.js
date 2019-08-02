@@ -2,7 +2,7 @@ import React from 'react';
 import { Container } from 'react-bootstrap';
 import Alert from '../components/AlertComponent';
 import BoxComponent from '../components/BoxComponent';
-import VotingButton from '../components/VotingButton';
+import VotingButtonComponent from '../components/VotingButtonComponent';
 
 
 const Home = () => {
@@ -50,13 +50,13 @@ const Home = () => {
 						<Container>
 							<div className="row">
 								<div className="col-sm-6 text-center btn-green">
-									<VotingButton
+									<VotingButtonComponent
 										classCSS="icon-custom-medium white-text"
 										iconVariant="faThumbsUp"
 									/>
 								</div>
 								<div className="col-sm-6 text-center btn-yellow flipped-x-axis">
-									<VotingButton
+									<VotingButtonComponent
 										classCSS="icon-custom-medium white-text"
 										iconVariant="faThumbsDown"
 									/>

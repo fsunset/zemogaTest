@@ -1,6 +1,6 @@
 import React from 'react';
 import { Card, Button } from 'react-bootstrap';
-import VotingButton from '../components/VotingButton';
+import VotingButtonComponent from '../components/VotingButtonComponent';
 
 
 const BoxComponent = (props) => {
@@ -10,7 +10,7 @@ const BoxComponent = (props) => {
 				<Card.Body>
 					<Card.Title className="clearfix">
 						<span className={ props.popularity === "up" ? "btn-green" : "btn-yellow" }>
-							<VotingButton
+							<VotingButtonComponent
 								classCSS={"icon-custom-small white-text" }
 								iconVariant={ "faThumbs" + props.popularity.charAt(0).toUpperCase() + props.popularity.slice(1) }
 							/>
@@ -24,19 +24,17 @@ const BoxComponent = (props) => {
 						{ props.lastActive } <span>in</span> { props.field }
 					</Card.Subtitle>
 
-					<Card.Text>
-						{ props.text }
-					</Card.Text>
+					<Card.Text>{ props.text }</Card.Text>
 
 					<div className="container">
-						<VotingButton
+						<VotingButtonComponent
 							buttonWrapper={ true }
 							wrapperCss="action-btn btn-green"
 							classCSS={ "icon-custom-small white-text" }
 							iconVariant="faThumbsUp"
 						/>
 
-						<VotingButton
+						<VotingButtonComponent
 							buttonWrapper={ true }
 							wrapperCss="action-btn btn-yellow"
 							classCSS={ "icon-custom-small white-text" }
@@ -49,7 +47,7 @@ const BoxComponent = (props) => {
 					<div className="votes-results-bar-container">
 						<div className={ "btn-green votes-up width-" + props.voting_results.up }>
 							<p>
-								<VotingButton
+								<VotingButtonComponent
 									classCSS="icon-custom-medium white-text"
 									iconVariant="faThumbsUp"
 								/>
@@ -59,7 +57,7 @@ const BoxComponent = (props) => {
 						<div className={ "text-right btn-yellow votes-down width-" + props.voting_results.down }>
 							<p>
 								<span>{ props.voting_results.down }%</span>
-								<VotingButton
+								<VotingButtonComponent
 									classCSS="icon-custom-medium white-text"
 									iconVariant="faThumbsDown"
 								/>

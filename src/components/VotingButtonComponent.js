@@ -3,7 +3,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faThumbsUp, faThumbsDown } from '@fortawesome/free-solid-svg-icons';
 
 
-const VotingButton = ({ buttonWrapper = false, wrapperCss = null, classCSS = null, iconVariant }) => {
+const VotingButtonComponent = ({ buttonWrapper = false, wrapperCss = null, classCSS = null, iconVariant }) => {
 	const [selected, setSelected] = useState(false);
 
 	let iconsList = {
@@ -24,4 +24,4 @@ const VotingButton = ({ buttonWrapper = false, wrapperCss = null, classCSS = nul
 	)
 }
 
-export default VotingButton;
+export default VotingButtonComponent;

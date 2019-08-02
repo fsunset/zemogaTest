@@ -4,7 +4,7 @@ import { faFacebookSquare, faTwitter } from "@fortawesome/free-brands-svg-icons"
 
 
 
-const Footer = () => (
+const FooterComponent = () => (
 	<footer className="container">
 		<p className="float-right">
 			Follow Us
@@ -19,4 +19,4 @@ const Footer = () => (
 	</footer>
 );
 
-export default Footer;
+export default FooterComponent;

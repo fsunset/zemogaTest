@@ -5,7 +5,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faSearch } from '@fortawesome/free-solid-svg-icons';
 
 
-const Header = () => (
+const HeaderComponent = () => (
 	<header>
 		<Navbar expand="lg" className="fixed-top">
 			<Container>
@@ -25,4 +25,4 @@ const Header = () => (
 	</header>
 );
 
-export default Header;
+export default HeaderComponent;
