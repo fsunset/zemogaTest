@@ -17,7 +17,7 @@ const Header = () => (
 						<Link to="/how-it-works" className="nav-link white-text">How It Works</Link>
 						<Link to="/login" className="nav-link white-text">Log In / Sign Up</Link>
 
-						<FontAwesomeIcon icon={ faSearch } className="icon-custom-size white-text" />
+						<FontAwesomeIcon icon={ faSearch } className="icon-custom-large white-text" />
 					</Nav>
 				</Navbar.Collapse>
 			</Container>

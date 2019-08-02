@@ -21,9 +21,9 @@ function App() {
 	            <Route path="/past-trials" component={ PastTrialsPage } />
 	            <Route path="/how-it-works" component={ HowItWorksPage } />
 	            <Route path="/login" component={ LogInPage } />
-            </main>
 
-            <Footer />
+                <Footer />
+            </main>
         </Router>
     );
 }

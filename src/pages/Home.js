@@ -1,9 +1,8 @@
 import React from 'react';
 import { Container } from 'react-bootstrap';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faThumbsDown, faThumbsUp } from '@fortawesome/free-solid-svg-icons';
 import Alert from '../components/AlertComponent';
 import BoxComponent from '../components/BoxComponent';
+import VotingButton from '../components/VotingButton';
 
 
 const Home = () => {
@@ -18,6 +17,8 @@ const Home = () => {
 				lastActive={ person.last_active }
 				text={ person.text }
 				photo={ person.img_name }
+				popularity={ person.popularity }
+				voting_results={ person.voting_results }
 			/>
 		);
 
@@ -49,10 +50,16 @@ const Home = () => {
 						<Container>
 							<div className="row">
 								<div className="col-sm-6 text-center btn-green">
-									<FontAwesomeIcon icon={ faThumbsUp } className="icon-custom-size white-text" />
+									<VotingButton
+										classCSS="icon-custom-medium white-text"
+										iconVariant="faThumbsUp"
+									/>
 								</div>
 								<div className="col-sm-6 text-center btn-yellow flipped-x-axis">
-									<FontAwesomeIcon icon={ faThumbsDown } className="icon-custom-size white-text" />
+									<VotingButton
+										classCSS="icon-custom-medium white-text"
+										iconVariant="faThumbsDown"
+									/>
 								</div>
 							</div>
 						</Container>

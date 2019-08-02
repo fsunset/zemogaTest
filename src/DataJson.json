@@ -8,7 +8,11 @@
             "field": "entertainment", 
             "last_active": "1 month ago",
             "img_name": "kanye",
-            "popularity": "high",
+            "popularity": "up",
+            "voting_results": {
+                "up": 64,
+                "down": 36
+            },
             "text": "Vestibulum diam ante, porttitor a odio eget, rhoncus neque. Aenean eu velit."
         },
         {
@@ -17,7 +21,11 @@
             "field": "business", 
             "last_active": "1 month ago",
             "img_name": "mark",
-            "popularity": "low",
+            "popularity": "down",
+            "voting_results": {
+                "up": 36,
+                "down": 64
+            },
             "text": "Vestibulum diam ante, porttitor a odio eget, rhoncus neque. Aenean eu velit."
         },
         {
@@ -26,7 +34,11 @@
             "field": "politics", 
             "last_active": "1 month ago",
             "img_name": "cristina",
-            "popularity": "high",
+            "popularity": "down",
+            "voting_results": {
+                "up": 36,
+                "down": 64
+            },
             "text": "Vestibulum diam ante, porttitor a odio eget, rhoncus neque. Aenean eu velit."
         },
         {
@@ -35,7 +47,11 @@
             "field": "entertainment", 
             "last_active": "1 month ago",
             "img_name": "malala",
-            "popularity": "low",
+            "popularity": "up",
+            "voting_results": {
+                "up": 64,
+                "down": 36
+            },
             "text": "Vestibulum diam ante, porttitor a odio eget, rhoncus neque. Aenean eu velit."
         }
     ]
