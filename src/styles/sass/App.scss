@@ -314,7 +314,7 @@ main {
 	    			cursor: default;
 	    		}
 
-	    		.votes-bar-container {
+	    		.votes-results-bar-container {
 	    			position: absolute;
     			    bottom: 0;
     			    left: 0;
@@ -340,8 +340,10 @@ main {
 	    		}
 
 	    		.action-btn {
-	    			cursor: pointer;
 	    			margin-right: 2rem;
+	    			border: none;
+
+	    			&.selected { border: 1px solid $softGrey; }
 
 	    			&:first-child { margin-left: 0; }
 

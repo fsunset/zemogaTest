@@ -3,62 +3,62 @@ import { Card, Button } from 'react-bootstrap';
 import VotingButton from '../components/VotingButton';
 
 
-const BoxComponent = (params) => {
-	return (
+const BoxComponent = (props) => {
+	return(
 		<div className="col-md-5 col-sm-12">
-			<Card className={ params.photo ? 'text-white bg-img-' + params.photo : 'text-white' }>
+			<Card className={ props.photo ? 'text-white bg-img-' + props.photo : 'text-white' }>
 				<Card.Body>
 					<Card.Title className="clearfix">
-						<span className={ params.popularity === "up" ? "btn-green" : "btn-yellow" }>
+						<span className={ props.popularity === "up" ? "btn-green" : "btn-yellow" }>
 							<VotingButton
 								classCSS={"icon-custom-small white-text" }
-								iconVariant={ "faThumbs" + params.popularity.charAt(0).toUpperCase() + params.popularity.slice(1) }
+								iconVariant={ "faThumbs" + props.popularity.charAt(0).toUpperCase() + props.popularity.slice(1) }
 							/>
 						</span>
 						<span>
-							{ params.name }
+							{ props.name }
 						</span>
 					</Card.Title>
 
 					<Card.Subtitle className="mb-2">
-						{ params.lastActive } <span>in</span> { params.field }
+						{ props.lastActive } <span>in</span> { props.field }
 					</Card.Subtitle>
 
 					<Card.Text>
-						{ params.text }
+						{ props.text }
 					</Card.Text>
 
 					<div className="container">
-						<span className="action-btn btn-green">
-							<VotingButton
-								classCSS={"icon-custom-small white-text" }
-								iconVariant="faThumbsUp"
-							/>
-						</span>
+						<VotingButton
+							buttonWrapper={ true }
+							wrapperCss="action-btn btn-green"
+							classCSS={ "icon-custom-small white-text" }
+							iconVariant="faThumbsUp"
+						/>
 
-						<span className="action-btn btn-yellow">
-							<VotingButton
-								classCSS={"icon-custom-small white-text" }
-								iconVariant="faThumbsDown"
-							/>
-						</span>
+						<VotingButton
+							buttonWrapper={ true }
+							wrapperCss="action-btn btn-yellow"
+							classCSS={ "icon-custom-small white-text" }
+							iconVariant="faThumbsDown"
+						/>
 
 						<Button variant="outline-light" size="sm">Vote now</Button>
 					</div>
 
-					<div className="votes-bar-container">
-						<div className={ "btn-green votes-up width-" + params.voting_results.up }>
+					<div className="votes-results-bar-container">
+						<div className={ "btn-green votes-up width-" + props.voting_results.up }>
 							<p>
 								<VotingButton
 									classCSS="icon-custom-medium white-text"
 									iconVariant="faThumbsUp"
 								/>
-								<span>{ params.voting_results.up }%</span>
+								<span>{ props.voting_results.up }%</span>
 							</p>
 						</div>
-						<div className={ "text-right btn-yellow votes-down width-" + params.voting_results.down }>
+						<div className={ "text-right btn-yellow votes-down width-" + props.voting_results.down }>
 							<p>
-								<span>{ params.voting_results.down }%</span>
+								<span>{ props.voting_results.down }%</span>
 								<VotingButton
 									classCSS="icon-custom-medium white-text"
 									iconVariant="faThumbsDown"
@@ -71,5 +71,6 @@ const BoxComponent = (params) => {
 		</div>
 	)
 }
+
 
 export default BoxComponent;

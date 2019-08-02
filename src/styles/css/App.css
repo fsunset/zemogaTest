@@ -220,26 +220,28 @@ main .boxes-container {
           main .boxes-container .card .card-body [class*="btn-"] {
             margin-right: .7vw;
             padding: .7vw; } }
-      main .boxes-container .card .card-body .votes-bar-container {
+      main .boxes-container .card .card-body .votes-results-bar-container {
         position: absolute;
         bottom: 0;
         left: 0;
         right: 0;
         width: 100%; }
-        main .boxes-container .card .card-body .votes-bar-container [class*="votes-"] {
+        main .boxes-container .card .card-body .votes-results-bar-container [class*="votes-"] {
           margin: 0;
           height: 2.3rem; }
-          main .boxes-container .card .card-body .votes-bar-container [class*="votes-"] p {
+          main .boxes-container .card .card-body .votes-results-bar-container [class*="votes-"] p {
             width: 100%; }
-            main .boxes-container .card .card-body .votes-bar-container [class*="votes-"] p span {
+            main .boxes-container .card .card-body .votes-results-bar-container [class*="votes-"] p span {
               margin: 0 .5rem; }
-        main .boxes-container .card .card-body .votes-bar-container .width-64 {
+        main .boxes-container .card .card-body .votes-results-bar-container .width-64 {
           width: 64%; }
-        main .boxes-container .card .card-body .votes-bar-container .width-36 {
+        main .boxes-container .card .card-body .votes-results-bar-container .width-36 {
           width: 36%; }
       main .boxes-container .card .card-body .action-btn {
-        cursor: pointer;
-        margin-right: 2rem; }
+        margin-right: 2rem;
+        border: none; }
+        main .boxes-container .card .card-body .action-btn.selected {
+          border: 1px solid #E0D7E5; }
         main .boxes-container .card .card-body .action-btn:first-child {
           margin-left: 0; }
         main .boxes-container .card .card-body .action-btn .icon-custom-small {

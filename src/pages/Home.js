@@ -6,7 +6,7 @@ import VotingButton from '../components/VotingButton';
 
 
 const Home = () => {
-	function VotingBoxes() {
+	const VotingBoxes = () => {
 		let data = require('../DataJson.json');
 
 		const boxes = data.results.map((person) =>
