@@ -7,7 +7,7 @@ import { faFacebookSquare, faTwitter } from "@fortawesome/free-brands-svg-icons"
 const FooterComponent = () => (
 	<footer className="container">
 		<p className="float-right">
-			Follow Us
+			<span>Follow Us</span>
 			<FontAwesomeIcon icon={ faFacebookSquare } className="social-icon" />
 			<FontAwesomeIcon icon={ faTwitter } className="social-icon" />
 		</p>

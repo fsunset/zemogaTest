@@ -258,7 +258,7 @@ main {
 
 		    	position: absolute;
 		    	bottom: 0;
-		    	height: 75%;
+		    	height: 79%;
 		    	@media (min-width: 992px) {
 		    		height: 60%;
 		    	}
@@ -393,12 +393,19 @@ footer {
 	    @media (min-width: 992px) {
 	    	display: inline-block;
 	    }
-    }
 
-    .social-icon {
-    	color: $darkGrey;
-    	font-size: 1.5rem;
-    	margin-left: 1vw;
+	    > span {
+	    	display: block;
+	    	@media (min-width: 992px) {
+	    		display: inline;
+	    	}
+	    }
+
+	    .social-icon {
+	    	color: $darkGrey;
+	    	font-size: 1.5rem;
+	    	margin-left: 1vw;
+	    }
     }
 }
 

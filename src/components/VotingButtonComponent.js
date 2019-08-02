@@ -1,10 +1,9 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faThumbsUp, faThumbsDown } from '@fortawesome/free-solid-svg-icons';
 
 
-const VotingButtonComponent = ({ buttonWrapper = false, wrapperCss = null, classCSS = null, iconVariant }) => {
-	const [selected, setSelected] = useState(false);
+const VotingButtonComponent = ({ buttonWrapper = false, wrapperCss = null, onClickEvent, ariaControls, ariaExpanded, classCSS = null, iconVariant }) => {
 
 	let iconsList = {
 		faThumbsUp: faThumbsUp,
@@ -13,7 +12,13 @@ const VotingButtonComponent = ({ buttonWrapper = false, wrapperCss = null, class
 	
 	if (buttonWrapper) {
 		return (
-			<button onClick={ () => setSelected(!selected) } className={ !selected ? wrapperCss : wrapperCss + " selected" }>
+			<button
+				onClick={ onClickEvent }
+				keyid={ iconVariant }
+				className={ wrapperCss }
+				aria-controls={ ariaControls }
+				aria-expanded={ ariaExpanded }
+			>
 				<FontAwesomeIcon icon={ iconsList[iconVariant] } className={ classCSS } />
 			</button>
 		)

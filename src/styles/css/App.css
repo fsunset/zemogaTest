@@ -178,7 +178,7 @@ main .boxes-container {
       /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
       position: absolute;
       bottom: 0;
-      height: 75%; }
+      height: 79%; }
       @media (min-width: 992px) {
         main .boxes-container .card .card-body {
           height: 60%; } }
@@ -292,10 +292,18 @@ footer {
       footer p,
       footer a {
         display: inline-block; } }
-  footer .social-icon {
-    color: #333333;
-    font-size: 1.5rem;
-    margin-left: 1vw; }
+    footer p > span,
+    footer a > span {
+      display: block; }
+      @media (min-width: 992px) {
+        footer p > span,
+        footer a > span {
+          display: inline; } }
+    footer p .social-icon,
+    footer a .social-icon {
+      color: #333333;
+      font-size: 1.5rem;
+      margin-left: 1vw; }
 
 /* 
  *** Media Queries
