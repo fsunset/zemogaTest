@@ -258,6 +258,7 @@ main {
 
 		    	position: absolute;
 		    	bottom: 0;
+		    	width: 100%;
 		    	height: 79%;
 		    	@media (min-width: 992px) {
 		    		height: 60%;
@@ -337,6 +338,15 @@ main {
     			    		width: percentage($widthPercentage / 100);
     			    	}
     			    }
+	    		}
+
+	    		.voting-btn {
+	    			margin-top: -1.7vh;
+	    			@media (min-width: 992px) {
+	    				margin-top: -1vh;
+	    			}
+
+	    			&.left-aligned { margin-left: -6rem; }
 	    		}
 
 	    		.action-btn {

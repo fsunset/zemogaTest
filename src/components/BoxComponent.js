@@ -4,10 +4,41 @@ import VotingButtonComponent from '../components/VotingButtonComponent';
 
 
 const BoxComponent = (props) => {
-	const [selected, setSelected] = useState(false);
+	const [votingInfo, setVotingInfo] = useState({
+			selected: false,
+			votingBtntext: "Vote now",
+			buttonsHidden: false,
+			boxMessage: props.text
+		}),
+		{ selected, votingBtntext, buttonsHidden, boxMessage } = votingInfo;
 
-	const handleClickEvent = (e, keyid) => {
-		setSelected(keyid);
+	const handleSetVoteClick = (e, keyid) => {
+		return (
+			setVotingInfo({
+				selected: keyid,
+				votingBtntext: "Vote now",
+				buttonsHidden: false,
+				boxMessage: props.text
+			})
+		)
+	}
+
+	const handleVoting = () => {
+		if (!buttonsHidden) {
+			setVotingInfo({
+				selected: selected,
+				votingBtntext: "Vote again",
+				buttonsHidden: true,
+				boxMessage: "Thank you for voting!"
+			})
+		} else {
+			setVotingInfo({
+				selected: false,
+				votingBtntext: "Vote now",
+				buttonsHidden: false,
+				boxMessage: props.text
+			})
+		}
 	}
 
 	return (
@@ -30,32 +61,44 @@ const BoxComponent = (props) => {
 						{ props.lastActive } <span>in</span> { props.field }
 					</Card.Subtitle>
 
-					<Card.Text>{ props.text }</Card.Text>
+					<Card.Text>{ boxMessage }</Card.Text>
 
 					<div className="container">
-						<VotingButtonComponent
-							buttonWrapper={ true }
-							wrapperCss={ selected !== "faThumbsUp" ? "action-btn btn-green" : "action-btn btn-green selected" }
-							onClickEvent={ e => handleClickEvent(e, "faThumbsUp") }
-							ariaControls="setVoteButton"
-							ariaExpanded={ selected }
-							classCSS={ "icon-custom-small white-text" }
-							iconVariant="faThumbsUp"
-						/>
+						<Fade in={ !buttonsHidden }>
+							<span id="buttonsContainer">
+								<VotingButtonComponent
+									buttonWrapper={ true }
+									wrapperCss={ selected !== "faThumbsUp" ? "action-btn btn-green" : "action-btn btn-green selected" }
+									onClickEvent={ e => handleSetVoteClick(e, "faThumbsUp") }
+									ariaControls="setVoteButton"
+									ariaExpanded={ selected }
+									classCSS={ "icon-custom-small white-text" }
+									iconVariant="faThumbsUp"
+								/>
 
-						<VotingButtonComponent
-							buttonWrapper={ true }
-							wrapperCss={ selected !== "faThumbsDown" ? "action-btn btn-yellow" : "action-btn btn-yellow selected" }
-							onClickEvent={ e => handleClickEvent(e, "faThumbsDown") }
-							ariaControls="setVoteButton"
-							ariaExpanded={ selected }
-							classCSS={ "icon-custom-small white-text" }
-							iconVariant="faThumbsDown"
-						/>
+								<VotingButtonComponent
+									buttonWrapper={ true }
+									wrapperCss={ selected !== "faThumbsDown" ? "action-btn btn-yellow" : "action-btn btn-yellow selected" }
+									onClickEvent={ e => handleSetVoteClick(e, "faThumbsDown") }
+									ariaControls="setVoteButton"
+									ariaExpanded={ selected }
+									classCSS={ "icon-custom-small white-text" }
+									iconVariant="faThumbsDown"
+								/>
+							</span>
+						</Fade>
 
 						<Fade in={ !selected ? false : true }>
-							<Button id="setVoteButton" variant="outline-light" size="sm">
-								Vote now
+							<Button
+								id="setVoteButton"
+								onClick={ handleVoting }
+								variant="outline-light"
+								size="sm"
+								aria-controls="buttonsContainer"
+								aria-expanded={ true }
+								className={ buttonsHidden ? "voting-btn left-aligned" : "voting-btn" }
+							>
+								{ votingBtntext }
 							</Button>
 						</Fade>
 					</div>
