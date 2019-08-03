@@ -10,8 +10,8 @@
             "img_name": "kanye",
             "popularity": "up",
             "voting_results": {
-                "up": 64,
-                "down": 36
+                "up": 60,
+                "down": 40
             },
             "text": "Vestibulum diam ante, porttitor a odio eget, rhoncus neque. Aenean eu velit."
         },
@@ -23,8 +23,8 @@
             "img_name": "mark",
             "popularity": "down",
             "voting_results": {
-                "up": 36,
-                "down": 64
+                "up": 40,
+                "down": 60
             },
             "text": "Vestibulum diam ante, porttitor a odio eget, rhoncus neque. Aenean eu velit."
         },
@@ -36,8 +36,8 @@
             "img_name": "cristina",
             "popularity": "down",
             "voting_results": {
-                "up": 36,
-                "down": 64
+                "up": 30,
+                "down": 70
             },
             "text": "Vestibulum diam ante, porttitor a odio eget, rhoncus neque. Aenean eu velit."
         },
@@ -49,8 +49,8 @@
             "img_name": "malala",
             "popularity": "up",
             "voting_results": {
-                "up": 64,
-                "down": 36
+                "up": 80,
+                "down": 20
             },
             "text": "Vestibulum diam ante, porttitor a odio eget, rhoncus neque. Aenean eu velit."
         }

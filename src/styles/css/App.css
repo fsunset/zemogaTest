@@ -233,7 +233,7 @@ main .boxes-container {
           main .boxes-container .card .card-body .votes-results-bar-container [class*="votes-"] p {
             width: 100%; }
             main .boxes-container .card .card-body .votes-results-bar-container [class*="votes-"] p span {
-              margin: 0 .5rem; }
+              margin: 0 .2rem; }
         main .boxes-container .card .card-body .votes-results-bar-container .width-0 {
           width: 0%; }
         main .boxes-container .card .card-body .votes-results-bar-container .width-1 {

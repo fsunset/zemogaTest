@@ -16,7 +16,6 @@ const BoxComponent = (props) => {
 			voteDown: parseInt(props.voting_results.down)
 		}
 	;
-
 	const [newVotes, setNewVotes] = useState(newVotesInitialState);
 	
 	// *** For the rest of info we need
