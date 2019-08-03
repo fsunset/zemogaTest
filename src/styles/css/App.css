@@ -234,10 +234,208 @@ main .boxes-container {
             width: 100%; }
             main .boxes-container .card .card-body .votes-results-bar-container [class*="votes-"] p span {
               margin: 0 .5rem; }
-        main .boxes-container .card .card-body .votes-results-bar-container .width-64 {
-          width: 64%; }
+        main .boxes-container .card .card-body .votes-results-bar-container .width-0 {
+          width: 0%; }
+        main .boxes-container .card .card-body .votes-results-bar-container .width-1 {
+          width: 1%; }
+        main .boxes-container .card .card-body .votes-results-bar-container .width-2 {
+          width: 2%; }
+        main .boxes-container .card .card-body .votes-results-bar-container .width-3 {
+          width: 3%; }
+        main .boxes-container .card .card-body .votes-results-bar-container .width-4 {
+          width: 4%; }
+        main .boxes-container .card .card-body .votes-results-bar-container .width-5 {
+          width: 5%; }
+        main .boxes-container .card .card-body .votes-results-bar-container .width-6 {
+          width: 6%; }
+        main .boxes-container .card .card-body .votes-results-bar-container .width-7 {
+          width: 7%; }
+        main .boxes-container .card .card-body .votes-results-bar-container .width-8 {
+          width: 8%; }
+        main .boxes-container .card .card-body .votes-results-bar-container .width-9 {
+          width: 9%; }
+        main .boxes-container .card .card-body .votes-results-bar-container .width-10 {
+          width: 10%; }
+        main .boxes-container .card .card-body .votes-results-bar-container .width-11 {
+          width: 11%; }
+        main .boxes-container .card .card-body .votes-results-bar-container .width-12 {
+          width: 12%; }
+        main .boxes-container .card .card-body .votes-results-bar-container .width-13 {
+          width: 13%; }
+        main .boxes-container .card .card-body .votes-results-bar-container .width-14 {
+          width: 14%; }
+        main .boxes-container .card .card-body .votes-results-bar-container .width-15 {
+          width: 15%; }
+        main .boxes-container .card .card-body .votes-results-bar-container .width-16 {
+          width: 16%; }
+        main .boxes-container .card .card-body .votes-results-bar-container .width-17 {
+          width: 17%; }
+        main .boxes-container .card .card-body .votes-results-bar-container .width-18 {
+          width: 18%; }
+        main .boxes-container .card .card-body .votes-results-bar-container .width-19 {
+          width: 19%; }
+        main .boxes-container .card .card-body .votes-results-bar-container .width-20 {
+          width: 20%; }
+        main .boxes-container .card .card-body .votes-results-bar-container .width-21 {
+          width: 21%; }
+        main .boxes-container .card .card-body .votes-results-bar-container .width-22 {
+          width: 22%; }
+        main .boxes-container .card .card-body .votes-results-bar-container .width-23 {
+          width: 23%; }
+        main .boxes-container .card .card-body .votes-results-bar-container .width-24 {
+          width: 24%; }
+        main .boxes-container .card .card-body .votes-results-bar-container .width-25 {
+          width: 25%; }
+        main .boxes-container .card .card-body .votes-results-bar-container .width-26 {
+          width: 26%; }
+        main .boxes-container .card .card-body .votes-results-bar-container .width-27 {
+          width: 27%; }
+        main .boxes-container .card .card-body .votes-results-bar-container .width-28 {
+          width: 28%; }
+        main .boxes-container .card .card-body .votes-results-bar-container .width-29 {
+          width: 29%; }
+        main .boxes-container .card .card-body .votes-results-bar-container .width-30 {
+          width: 30%; }
+        main .boxes-container .card .card-body .votes-results-bar-container .width-31 {
+          width: 31%; }
+        main .boxes-container .card .card-body .votes-results-bar-container .width-32 {
+          width: 32%; }
+        main .boxes-container .card .card-body .votes-results-bar-container .width-33 {
+          width: 33%; }
+        main .boxes-container .card .card-body .votes-results-bar-container .width-34 {
+          width: 34%; }
+        main .boxes-container .card .card-body .votes-results-bar-container .width-35 {
+          width: 35%; }
         main .boxes-container .card .card-body .votes-results-bar-container .width-36 {
           width: 36%; }
+        main .boxes-container .card .card-body .votes-results-bar-container .width-37 {
+          width: 37%; }
+        main .boxes-container .card .card-body .votes-results-bar-container .width-38 {
+          width: 38%; }
+        main .boxes-container .card .card-body .votes-results-bar-container .width-39 {
+          width: 39%; }
+        main .boxes-container .card .card-body .votes-results-bar-container .width-40 {
+          width: 40%; }
+        main .boxes-container .card .card-body .votes-results-bar-container .width-41 {
+          width: 41%; }
+        main .boxes-container .card .card-body .votes-results-bar-container .width-42 {
+          width: 42%; }
+        main .boxes-container .card .card-body .votes-results-bar-container .width-43 {
+          width: 43%; }
+        main .boxes-container .card .card-body .votes-results-bar-container .width-44 {
+          width: 44%; }
+        main .boxes-container .card .card-body .votes-results-bar-container .width-45 {
+          width: 45%; }
+        main .boxes-container .card .card-body .votes-results-bar-container .width-46 {
+          width: 46%; }
+        main .boxes-container .card .card-body .votes-results-bar-container .width-47 {
+          width: 47%; }
+        main .boxes-container .card .card-body .votes-results-bar-container .width-48 {
+          width: 48%; }
+        main .boxes-container .card .card-body .votes-results-bar-container .width-49 {
+          width: 49%; }
+        main .boxes-container .card .card-body .votes-results-bar-container .width-50 {
+          width: 50%; }
+        main .boxes-container .card .card-body .votes-results-bar-container .width-51 {
+          width: 51%; }
+        main .boxes-container .card .card-body .votes-results-bar-container .width-52 {
+          width: 52%; }
+        main .boxes-container .card .card-body .votes-results-bar-container .width-53 {
+          width: 53%; }
+        main .boxes-container .card .card-body .votes-results-bar-container .width-54 {
+          width: 54%; }
+        main .boxes-container .card .card-body .votes-results-bar-container .width-55 {
+          width: 55%; }
+        main .boxes-container .card .card-body .votes-results-bar-container .width-56 {
+          width: 56%; }
+        main .boxes-container .card .card-body .votes-results-bar-container .width-57 {
+          width: 57%; }
+        main .boxes-container .card .card-body .votes-results-bar-container .width-58 {
+          width: 58%; }
+        main .boxes-container .card .card-body .votes-results-bar-container .width-59 {
+          width: 59%; }
+        main .boxes-container .card .card-body .votes-results-bar-container .width-60 {
+          width: 60%; }
+        main .boxes-container .card .card-body .votes-results-bar-container .width-61 {
+          width: 61%; }
+        main .boxes-container .card .card-body .votes-results-bar-container .width-62 {
+          width: 62%; }
+        main .boxes-container .card .card-body .votes-results-bar-container .width-63 {
+          width: 63%; }
+        main .boxes-container .card .card-body .votes-results-bar-container .width-64 {
+          width: 64%; }
+        main .boxes-container .card .card-body .votes-results-bar-container .width-65 {
+          width: 65%; }
+        main .boxes-container .card .card-body .votes-results-bar-container .width-66 {
+          width: 66%; }
+        main .boxes-container .card .card-body .votes-results-bar-container .width-67 {
+          width: 67%; }
+        main .boxes-container .card .card-body .votes-results-bar-container .width-68 {
+          width: 68%; }
+        main .boxes-container .card .card-body .votes-results-bar-container .width-69 {
+          width: 69%; }
+        main .boxes-container .card .card-body .votes-results-bar-container .width-70 {
+          width: 70%; }
+        main .boxes-container .card .card-body .votes-results-bar-container .width-71 {
+          width: 71%; }
+        main .boxes-container .card .card-body .votes-results-bar-container .width-72 {
+          width: 72%; }
+        main .boxes-container .card .card-body .votes-results-bar-container .width-73 {
+          width: 73%; }
+        main .boxes-container .card .card-body .votes-results-bar-container .width-74 {
+          width: 74%; }
+        main .boxes-container .card .card-body .votes-results-bar-container .width-75 {
+          width: 75%; }
+        main .boxes-container .card .card-body .votes-results-bar-container .width-76 {
+          width: 76%; }
+        main .boxes-container .card .card-body .votes-results-bar-container .width-77 {
+          width: 77%; }
+        main .boxes-container .card .card-body .votes-results-bar-container .width-78 {
+          width: 78%; }
+        main .boxes-container .card .card-body .votes-results-bar-container .width-79 {
+          width: 79%; }
+        main .boxes-container .card .card-body .votes-results-bar-container .width-80 {
+          width: 80%; }
+        main .boxes-container .card .card-body .votes-results-bar-container .width-81 {
+          width: 81%; }
+        main .boxes-container .card .card-body .votes-results-bar-container .width-82 {
+          width: 82%; }
+        main .boxes-container .card .card-body .votes-results-bar-container .width-83 {
+          width: 83%; }
+        main .boxes-container .card .card-body .votes-results-bar-container .width-84 {
+          width: 84%; }
+        main .boxes-container .card .card-body .votes-results-bar-container .width-85 {
+          width: 85%; }
+        main .boxes-container .card .card-body .votes-results-bar-container .width-86 {
+          width: 86%; }
+        main .boxes-container .card .card-body .votes-results-bar-container .width-87 {
+          width: 87%; }
+        main .boxes-container .card .card-body .votes-results-bar-container .width-88 {
+          width: 88%; }
+        main .boxes-container .card .card-body .votes-results-bar-container .width-89 {
+          width: 89%; }
+        main .boxes-container .card .card-body .votes-results-bar-container .width-90 {
+          width: 90%; }
+        main .boxes-container .card .card-body .votes-results-bar-container .width-91 {
+          width: 91%; }
+        main .boxes-container .card .card-body .votes-results-bar-container .width-92 {
+          width: 92%; }
+        main .boxes-container .card .card-body .votes-results-bar-container .width-93 {
+          width: 93%; }
+        main .boxes-container .card .card-body .votes-results-bar-container .width-94 {
+          width: 94%; }
+        main .boxes-container .card .card-body .votes-results-bar-container .width-95 {
+          width: 95%; }
+        main .boxes-container .card .card-body .votes-results-bar-container .width-96 {
+          width: 96%; }
+        main .boxes-container .card .card-body .votes-results-bar-container .width-97 {
+          width: 97%; }
+        main .boxes-container .card .card-body .votes-results-bar-container .width-98 {
+          width: 98%; }
+        main .boxes-container .card .card-body .votes-results-bar-container .width-99 {
+          width: 99%; }
+        main .boxes-container .card .card-body .votes-results-bar-container .width-100 {
+          width: 100%; }
       main .boxes-container .card .card-body .voting-btn {
         margin-top: -1.7vh; }
         @media (min-width: 992px) {

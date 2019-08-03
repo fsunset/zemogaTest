@@ -1,16 +1,37 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Card, Button, Fade } from 'react-bootstrap';
 import VotingButtonComponent from '../components/VotingButtonComponent';
 
 
 const BoxComponent = (props) => {
-	const [votingInfo, setVotingInfo] = useState({
+	// *** For account new votes
+	const newVotesInitialState = localStorage.getItem("usersVotes") ?
+		{
+			voteUp: parseInt(JSON.parse(localStorage.getItem("usersVotes")).voteUp),
+			voteDown: parseInt(JSON.parse(localStorage.getItem("usersVotes")).voteDown)
+		}
+	:
+		{
+			voteUp: parseInt(props.voting_results.up),
+			voteDown: parseInt(props.voting_results.down)
+		}
+	;
+
+	const [newVotes, setNewVotes] = useState(newVotesInitialState);
+	
+	// *** For the rest of info we need
+	const { voteUp, voteDown } = newVotes,
+		[votingInfo, setVotingInfo] = useState({
 			selected: false,
 			votingBtntext: "Vote now",
 			buttonsHidden: false,
 			boxMessage: props.text
 		}),
 		{ selected, votingBtntext, buttonsHidden, boxMessage } = votingInfo;
+
+	useEffect(() => {
+		localStorage.setItem("usersVotes", JSON.stringify(newVotes));
+	}, [newVotes]);
 
 	const handleSetVoteClick = (e, keyid) => {
 		return (
@@ -31,6 +52,22 @@ const BoxComponent = (props) => {
 				buttonsHidden: true,
 				boxMessage: "Thank you for voting!"
 			})
+
+			if (selected === "voteUp") {
+				return (
+					setNewVotes({
+						voteUp: parseInt(voteUp + 1),
+						voteDown: parseInt(voteDown - 1)
+					})
+				)
+			} else if (selected === "voteDown") {
+				return (
+					setNewVotes({
+						voteUp: parseInt(voteUp - 1),
+						voteDown: parseInt(voteDown + 1)
+					})
+				)
+			}
 		} else {
 			setVotingInfo({
 				selected: false,
@@ -69,7 +106,7 @@ const BoxComponent = (props) => {
 								<VotingButtonComponent
 									buttonWrapper={ true }
 									wrapperCss={ selected !== "faThumbsUp" ? "action-btn btn-green" : "action-btn btn-green selected" }
-									onClickEvent={ e => handleSetVoteClick(e, "faThumbsUp") }
+									onClickEvent={ e => handleSetVoteClick(e, "voteUp") }
 									ariaControls="setVoteButton"
 									ariaExpanded={ selected }
 									classCSS={ "icon-custom-small white-text" }
@@ -79,7 +116,7 @@ const BoxComponent = (props) => {
 								<VotingButtonComponent
 									buttonWrapper={ true }
 									wrapperCss={ selected !== "faThumbsDown" ? "action-btn btn-yellow" : "action-btn btn-yellow selected" }
-									onClickEvent={ e => handleSetVoteClick(e, "faThumbsDown") }
+									onClickEvent={ e => handleSetVoteClick(e, "voteDown") }
 									ariaControls="setVoteButton"
 									ariaExpanded={ selected }
 									classCSS={ "icon-custom-small white-text" }
@@ -104,18 +141,18 @@ const BoxComponent = (props) => {
 					</div>
 
 					<div className="votes-results-bar-container">
-						<div className={ "btn-green votes-up width-" + props.voting_results.up }>
+						<div className={ "btn-green votes-up width-" + voteUp }>
 							<p>
 								<VotingButtonComponent
 									classCSS="icon-custom-medium white-text"
 									iconVariant="faThumbsUp"
 								/>
-								<span>{ props.voting_results.up }%</span>
+								<span>{ voteUp }%</span>
 							</p>
 						</div>
-						<div className={ "text-right btn-yellow votes-down width-" + props.voting_results.down }>
+						<div className={ "text-right btn-yellow votes-down width-" + voteDown }>
 							<p>
-								<span>{ props.voting_results.down }%</span>
+								<span>{ voteDown }%</span>
 								<VotingButtonComponent
 									classCSS="icon-custom-medium white-text"
 									iconVariant="faThumbsDown"
@@ -128,6 +165,5 @@ const BoxComponent = (props) => {
 		</div>
 	)
 }
-
 
 export default BoxComponent;
