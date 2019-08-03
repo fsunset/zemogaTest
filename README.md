@@ -9,7 +9,7 @@ Frontend Test for Zemoga. Contains the test described here --> https://github.co
 * SASS
 * React-bootstrap
 * React-fontawesome
-
+* In order to persist data for each voting-box; I'm using an independent cookie.
 
 ### To run it locally
 * Clone repo
