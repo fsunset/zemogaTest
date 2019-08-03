@@ -442,7 +442,11 @@ main .boxes-container {
           main .boxes-container .card .card-body .voting-btn {
             margin-top: -1vh; } }
         main .boxes-container .card .card-body .voting-btn.left-aligned {
-          margin-left: -6rem; }
+          margin-left: 0; }
+        main .boxes-container .card .card-body .voting-btn.fade {
+          display: none; }
+          main .boxes-container .card .card-body .voting-btn.fade.show {
+            display: inline-flex; }
       main .boxes-container .card .card-body .action-btn {
         margin-right: 2rem;
         border: none; }
@@ -460,6 +464,10 @@ main .boxes-container {
           @media (min-width: 992px) {
             main .boxes-container .card .card-body .action-btn + button {
               margin-top: -1vh; } }
+      main .boxes-container .card .card-body .buttons-container.fade {
+        display: none; }
+        main .boxes-container .card .card-body .buttons-container.fade.show {
+          display: inline; }
     main .boxes-container .card.bg-img-kanye {
       background: url("../../img/kanye.png");
       background-size: cover;

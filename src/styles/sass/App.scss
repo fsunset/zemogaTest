@@ -343,7 +343,13 @@ main {
 	    				margin-top: -1vh;
 	    			}
 
-	    			&.left-aligned { margin-left: -6rem; }
+	    			&.left-aligned { margin-left: 0; }
+
+	    			&.fade {
+	    				display: none;
+
+	    				&.show { display: inline-flex; }
+	    			}
 	    		}
 
 	    		.action-btn {
@@ -367,6 +373,12 @@ main {
 		    				margin-top: -1vh;
 		    			}
 		    		}
+	    		}
+
+	    		.buttons-container.fade {
+	    			display: none;
+
+	    			&.show { display: inline; }
 	    		}
 		    }
 

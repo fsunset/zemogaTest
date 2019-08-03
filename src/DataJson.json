@@ -23,8 +23,8 @@
             "img_name": "mark",
             "popularity": "down",
             "voting_results": {
-                "up": 40,
-                "down": 60
+                "up": 50,
+                "down": 50
             },
             "text": "Vestibulum diam ante, porttitor a odio eget, rhoncus neque. Aenean eu velit."
         },

@@ -35,10 +35,8 @@ const BoxComponent = (props) => {
 	const handleSetVoteClick = (e, keyid) => {
 		return (
 			setVotingInfo({
-				selected: keyid,
-				votingBtntext: "Vote now",
-				buttonsHidden: false,
-				boxMessage: props.text
+				...votingInfo,
+				selected: keyid
 			})
 		)
 	}
@@ -101,10 +99,10 @@ const BoxComponent = (props) => {
 
 					<div className="container">
 						<Fade in={ !buttonsHidden }>
-							<span id="buttonsContainer">
+							<span id="buttonsContainer" className="buttons-container">
 								<VotingButtonComponent
 									buttonWrapper={ true }
-									wrapperCss={ selected !== "faThumbsUp" ? "action-btn btn-green" : "action-btn btn-green selected" }
+									wrapperCss={ selected !== "voteUp" ? "action-btn btn-green" : "action-btn btn-green selected" }
 									onClickEvent={ e => handleSetVoteClick(e, "voteUp") }
 									ariaControls="setVoteButton"
 									ariaExpanded={ selected }
@@ -114,7 +112,7 @@ const BoxComponent = (props) => {
 
 								<VotingButtonComponent
 									buttonWrapper={ true }
-									wrapperCss={ selected !== "faThumbsDown" ? "action-btn btn-yellow" : "action-btn btn-yellow selected" }
+									wrapperCss={ selected !== "voteDown" ? "action-btn btn-yellow" : "action-btn btn-yellow selected" }
 									onClickEvent={ e => handleSetVoteClick(e, "voteDown") }
 									ariaControls="setVoteButton"
 									ariaExpanded={ selected }
