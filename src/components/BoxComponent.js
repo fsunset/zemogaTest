@@ -1,14 +1,18 @@
 import React, { useState, useEffect } from 'react';
+import { Cookies } from "react-cookie";
 import { Card, Button, Fade } from 'react-bootstrap';
 import VotingButtonComponent from '../components/VotingButtonComponent';
 
 
 const BoxComponent = (props) => {
-	// *** For account new votes
-	const newVotesInitialState = localStorage.getItem("usersVotes") ?
+	const cookies = new Cookies(),
+		  votingCookie = cookies.get("usersVotes_" + props.id);
+
+	// *** For accounting new votes
+	const newVotesInitialState = votingCookie ?
 		{
-			voteUp: parseInt(JSON.parse(localStorage.getItem("usersVotes")).voteUp),
-			voteDown: parseInt(JSON.parse(localStorage.getItem("usersVotes")).voteDown)
+			voteUp: parseInt(votingCookie.voteUp),
+			voteDown: parseInt(votingCookie.voteDown)
 		}
 	:
 		{
@@ -28,8 +32,10 @@ const BoxComponent = (props) => {
 		}),
 		{ selected, votingBtntext, buttonsHidden, boxMessage } = votingInfo;
 
+	// *** Create cookie with voting info
 	useEffect(() => {
-		localStorage.setItem("usersVotes", JSON.stringify(newVotes));
+		const cookies = new Cookies()
+		cookies.set("usersVotes_" + props.id, JSON.stringify(newVotes), { path: '/' })
 	}, [newVotes]);
 
 	const handleSetVoteClick = (e, keyid) => {
@@ -38,7 +44,7 @@ const BoxComponent = (props) => {
 				...votingInfo,
 				selected: keyid
 			})
-		)
+		)		
 	}
 
 	const handleVoting = () => {

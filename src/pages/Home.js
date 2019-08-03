@@ -11,6 +11,7 @@ const Home = () => {
 
 		const boxes = data.results.map((person) =>
 			<BoxComponent
+				id={ person.id }
 				key={ person.id }
 				name={ person.name }
 				field={ person.field }
