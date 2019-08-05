@@ -66,6 +66,17 @@ const Home = () => {
 						</Container>
 					</div>
 				</div>
+
+				<div className="remaining-days-bar">
+					<div className="row">
+						<div className="left">
+							<p>Closing in</p>
+						</div>
+						<div className="right">
+							<p><span>22</span> days</p>
+						</div>
+					</div>
+				</div>
 			</section>
 
 			<div className="container">

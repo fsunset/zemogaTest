@@ -122,11 +122,15 @@ main .jumbotron {
   background-repeat: no-repeat;
   background-size: cover;
   border-radius: 0;
+  position: relative;
   min-height: 750px;
   padding-top: 25vh; }
   main .jumbotron .box {
     background: rgba(60, 60, 60, 0.55);
     overflow: hidden; }
+    @media (max-width: 767.98px) {
+      main .jumbotron .box {
+        margin-bottom: 17vh; } }
     main .jumbotron .box h2,
     main .jumbotron .box p,
     main .jumbotron .box a {
@@ -154,6 +158,42 @@ main .jumbotron {
     main .jumbotron .box [class*="btn-"] {
       padding: 2vh;
       font-size: 2rem; }
+  main .jumbotron .remaining-days-bar {
+    background: rgba(60, 60, 60, 0.55);
+    bottom: 0;
+    color: white;
+    overflow: hidden;
+    position: absolute;
+    width: 100%; }
+    main .jumbotron .remaining-days-bar .row > div {
+      padding: 0 1rem; }
+      main .jumbotron .remaining-days-bar .row > div:first-child {
+        line-height: 3; }
+      main .jumbotron .remaining-days-bar .row > div.left {
+        position: relative;
+        text-align: right;
+        width: 40%; }
+        main .jumbotron .remaining-days-bar .row > div.left:after {
+          content: '';
+          position: absolute;
+          right: 0;
+          top: 50%;
+          width: 0;
+          height: 0;
+          border: 10px solid transparent;
+          border-left-color: rgba(60, 60, 60, 0.55);
+          border-right: 0;
+          margin-top: -10px;
+          margin-right: -10px; }
+      main .jumbotron .remaining-days-bar .row > div.right {
+        background: rgba(255, 255, 255, 0.66);
+        color: black;
+        font-size: xx-large;
+        width: 60%; }
+      main .jumbotron .remaining-days-bar .row > div p {
+        margin-bottom: 0; }
+        main .jumbotron .remaining-days-bar .row > div p span {
+          font-family: Lato; }
 
 main .boxes-container {
   padding-bottom: 2vh; }
