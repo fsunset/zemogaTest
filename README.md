@@ -1,4 +1,4 @@
-# zemogaTest
+# Voting App
 Contains an small web-app for voting purposes mockup --> https://s3-us-west-2.amazonaws.com/zemoga-files/ui/candidates-test/test-ui-v2.png
 
 ### Techs used, among other:
