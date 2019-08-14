@@ -1,5 +1,5 @@
 # zemogaTest
-Frontend Test for Zemoga. Contains the test described here --> https://github.com/zemoga/ui-test
+Contains an small web-app for voting purposes mockup --> https://s3-us-west-2.amazonaws.com/zemoga-files/ui/candidates-test/test-ui-v2.png
 
 ### Techs used, among other:
 
@@ -15,7 +15,3 @@ Frontend Test for Zemoga. Contains the test described here --> https://github.co
 * Clone repo
 * Run *npm install* to install dependencies
 * Run *npm start*
-
-For any further questions/comments I'll be available over gmail :)
-
-Thanks!
